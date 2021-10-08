@@ -1,0 +1,151 @@
+.card{
+    border: 2px solid red;
+    border-radius: 12px;
+    height: 350px;
+    width: 413px;
+    margin-left: 36%;
+    margin-top: 4%;
+    color: red;
+    text-align: center;
+    position: relative;
+}
+
+h1{
+    /* text-align: center; */
+    font-family: arial;
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: 38%;
+    width: 500px;
+    position: relative;
+
+}
+
+h1:before{
+    content: "";
+    display: block;
+   width: 155px;
+   height: 2px;
+   background-color: black;
+   position: absolute;
+   margin-left: -35%;
+    top: 40px;
+}
+
+h1::after{
+    content: "";
+    display: block;
+   width: 155px;
+   height: 2px;
+   background-color: black;
+   position: absolute;
+   right: -8%;
+    top: 40px;
+}
+
+.back{
+    text-align: center;
+    font-family: arial;
+    font-size: 30px;
+    color: grey;
+    margin: 55px;
+}
+.t{
+    position: relative;
+    top: 30px;
+    font-size: 36px;
+    font-family: arial;
+}
+.t::after{
+    content: "";
+    display: block;
+   width: 297px;
+   height: 1px;
+   background-color: black;
+   position: absolute;
+   right: -58%;
+    top: 51px;
+}
+i{
+    color: red;
+}
+
+#b-icon{
+    margin-right: 10px;
+    font-size: larger;
+}
+#c{
+    font-size: x-large;
+    text-decoration-line: line-through;
+    font-family: arial;
+    position: relative;
+    top: 45px;
+}
+
+form{
+    color: black;
+    font-size: 22px;
+    font-family: arial;
+    position: relative;
+    top: 46px;
+}
+
+input{
+    height: 20px;
+    width: 20px;
+ }
+
+#p-icon{
+    position: absolute;
+    /* position: relative; */
+    bottom: 27px;
+    right: 28px;
+    font-size: 40px;
+}
+
+
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+    .card{
+        height: 470px;
+        width: 325px;
+        text-align: center;
+        position: relative;
+        margin-left: 6px;
+    }
+    
+    #b-icon{
+        position: absolute;
+        top: 35px;
+        left: 8px;
+        font-size: 50px;
+    }
+    
+    .b{
+        display: none;
+    }
+    h1:before{
+        display: none;
+    }
+    h1:after{
+        display: none;
+    }
+    h1{
+        margin-left: 65px;
+    font-size: 48px;
+    }
+    .t::after{
+        content: "";
+        display: block;
+       width: 255px;
+       height: 1px;
+       background-color: black;
+       position: absolute;
+       right: -35%;
+        top: 51px;
+    }
+    form{ 
+        font-size: 30px;
+        top: 56px;
+    }
+}
