@@ -22,7 +22,7 @@ font-weight: bolder;
     color: grey;
     font-size: 35px;
     font-weight: lighter;
-  
+
 }
 
 i{
@@ -63,17 +63,17 @@ input{
 .container{
     display: flex;
     justify-content: center;
-    align-content: flex-end;
+   flex-wrap: wrap;
 }
 
 .box{
-    margin:35px;
+    margin: 80px;
     padding: 40px 0px 1px 35px;
     border: 2px solid red;
     border-radius: 5px;
     box-shadow: 7px 7px 20px grey;
     height: 300px;
-    width: 200px;
+    width: 210px;
     text-align: center;
     color: red;
 }
@@ -83,7 +83,7 @@ input{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
        flex-direction: column;
     }
     .box{
@@ -124,4 +124,16 @@ input{
             margin-right: 20px;
             font-size: 40px;
         }
+}
+
+@media screen and (min-width: 510px) and (max-width: 1300px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box{
+        margin: 80px;
+        padding: 40px 0px 1px 35px;
+    }
 }
